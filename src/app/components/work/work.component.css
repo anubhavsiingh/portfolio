@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Courgette&family=Dosis:wght@700&family=Fredoka+One&family=Jost:ital,wght@1,300&family=Jua&family=Lexend+Exa:wght@300&family=Rubik&family=Sriracha&family=Varela+Round&family=Viga&display=swap');
+
+.work {
+    /* position : relative; */
+    display : flex;
+    align-items : center;
+    justify-content : center;
+    /* padding : 30px;   */
+    color: white;
+    
+  }
+  h1,h2{
+    color: rgb(243, 162, 40);
+    font-family:'Rubik',monospace;
+    font-weight: 600;
+  }
+  
+  .work .card {
+    /* position: relative; */
+    max-width : 310px;
+    height : 240px;  
+    /* background-color : lightsalmon; */
+    margin : 30px 5px;
+    padding : 20px 15px;
+    box-shadow: rgba(89, 100, 119, 0.425) 0px 2px 2px;
+    /* display : flex; */
+    flex-direction : column;
+    /* box-shadow : 0 5px 20px rgba(0,0,0,0.5); */
+    transition : 0.3s ease-in-out;
+    border-radius : 15px;
+  }
+
+  .c1{
+      background-color:rgb(209, 255, 255);
+  }
+  .c2{
+      background-color: lightpink;
+  }
+
+  .c3{
+      background-color: rgb(255, 235, 145);
+  }
+
+  .work .card:hover {
+    height : 350px;
+  }
+  
+  .work .card .image {
+    position : relative;
+    width : 45%;
+    top : -27%;
+    /* left: 8px; */
+    margin-left: 25%;
+    /* box-shadow : 0 5px 20px rgba(0,0,0,0.2); */
+    z-index : 1;
+    animation: image-ani 1s;
+  }
+  
+  .work-heading{
+      position: relative;
+    width: 90%;
+    font-size: 1.4rem;
+    font-family: 'Dosis', sans-serif;
+    margin: 15px auto;
+    top: -20%;
+    margin-bottom: 10px;
+    padding: 4px;
+    color: #212325;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 4px;
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  cursor: pointer;
+}
+
+.wh1{
+    background: linear-gradient(130deg,
+              rgb(253, 195, 148),
+              rgba(253, 142, 198, 0.808));
+}
+
+.wh2{
+    background: linear-gradient(130deg,
+              rgba(96, 240, 204, 0.603),
+              rgba(168, 104, 224, 0.548));
+}
+
+.wh3{
+    background: linear-gradient(130deg,
+              rgb(179, 196, 253),
+              rgba(250, 225, 235, 0.781));
+}
+.work-heading:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 8px 9px;
+}
+
+.but{
+    position: relative;
+    outline: none;
+    border:none;
+}
+
+  .work .card .image img {
+    max-width : 100%;
+    border-radius : 15px;
+  }
+  
+  .work .card .content {
+    font-size: .9rem;
+    position : relative;
+    top : -70px;
+    padding : 8px 5px;
+    color : #111;
+    text-align : center;
+    visibility : hidden;
+    opacity : 0;
+    transition : 0.3s ease-in-out;
+      
+  }
+  
+  .work .card:hover .content {
+     margin-top : 15px;
+     visibility : visible;
+     opacity : 1;
+     transition-delay: 0.2s;
+    
+  }
+
+  .tech{
+      color: black;
+      font-weight: 800;
+      font-size: .9rem;
+      text-align: center;
+      font-family: 'Lexend Exa', sans-serif;
+      background: linear-gradient(130deg,
+              rgba(238, 201, 255, 0.603),
+              rgba(182, 182, 255, 0.548));
+  box-shadow: inset 2px 2px 1px rgba(251,251,254,.3)
+              inset -2px -2px 1px rgba(200, 200, 240, 0.2);
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  backdrop-filter: blur(10px);
+  visibility : hidden;
+    opacity : 0;
+  }
+
+  .work .card:hover .tech {
+    margin-top : 3px;
+    visibility : visible;
+    opacity : 1;
+    transition-delay: 0.2s;
+   
+ }
+
+  @media screen and (max-width: 770px) {
+
+    .mob{
+        margin-top: 30px;
+    }
+    h2{
+        text-align: center;
+    }
+    .main-work{
+        margin-bottom: 9%;
+    }
+    .work .card{
+      font-size: .9rem;
+    }
+    .tech{
+        margin: 20px;
+    }
+  }
+
+  @keyframes image-ani{
+    0%{
+        margin-top: -70%;
+    }
+
+    100%{
+        top: -27%;
+    }
+}
+
+@media screen and (min-width: 1602px){
+  .work-heading{
+  font-size: 4rem;
+  }
+  .cust{
+    font-size: 2rem;
+  }
+  
+}

@@ -1,0 +1,61 @@
+<div class="container contact-main mt-3">
+
+    <div class="row">
+        <div *ngIf="successAlert=='true'" class="alert alert-success" role="alert">
+            Your message has been sent sucessfully!!
+          </div>
+          <div *ngIf="errorAlert" class="alert alert-danger" role="alert">
+            Fillout the fields properly.
+          </div>
+        <div class="col-sm-4 mt-sm-5">
+            <h3 class="contact">Say 👋 and let&#x27;s talk about our future collaboration</h3>
+            <div class="info mt-sm-5">
+            <div class="row mt-4">
+                <div class="col-2"><i class="bx bx-phone-call icons text-center"></i></div>
+                <div class="col"><p class="ic-text">+91 7530916355</p></div>
+                <!-- <i class="bx bxs-mobile icons text-center">&nbsp; </i><p class="ic-text d-inline">+91 7530916355</p> -->
+            </div>
+            <div class="row">
+                <div class="col-2"><i class="bx bx-map-pin icons text-center"></i></div>
+                <div class="col"><p class="ic-text">Delhi, India</p></div>
+                <!-- <i class="bx bxs-mobile icons text-center">&nbsp; </i><p class="ic-text d-inline">+91 7530916355</p> -->
+            </div>
+            <div class="row">
+                <div class="col-2"><i class="bx bx-mail-send icons text-center"></i></div>
+                <div class="col"><p class="ic-text">anubhavsiingh@gmail.com</p></div>
+                <!-- <i class="bx bxs-mobile icons text-center">&nbsp; </i><p class="ic-text d-inline">+91 7530916355</p> -->
+            </div>
+
+            <!-- <div class="row" id="map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=125MlCxoiIDRhFJ-QdcgWnE9wDNjWs-jC&ehbc=2E312F"></iframe>
+            </div> -->
+        </div>
+        </div>
+        <div class="col"></div>
+        <div class="col-sm-7 p-4">
+            
+            <form ngNoForm class="cf" action="https://formsubmit.co/shwyamr@gmail.com" method="POST">
+                <div class="form-group">
+                    <div class="form-row">
+                <div class="half left cf">
+                    <input type="text" id="input-name" [(ngModel)]="name" placeholder="Your name" name="name" class="form-control" autofocus required>
+                </div>
+                <div class="half right cf">
+                    <input type="email" id="input-email" [(ngModel)]="email" name="email" class="form-control" placeholder="Email address" required>
+                </div>
+                <input type="text" id="input-subject" name="_subject" class="form-control" placeholder="Subject">
+                <textarea name="message" type="text" [(ngModel)]="message" id="input-message" name="message" class="form-control" placeholder="Message" required></textarea>
+                
+                <input type="hidden" name="_next" value="https://anubhavsiingh.netlify.app/contact">
+                <input type="hidden" name="_autoresponse" value="Hey, thanks for contacting me!!">
+
+                <input (click)="onSubmit()" type="submit" value="Send Message" id="input-submit">
+            
+                </div>
+                </div>
+            </form>
+        </div>
+        
+    </div>
+
+</div>

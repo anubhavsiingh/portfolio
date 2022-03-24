@@ -1,0 +1,77 @@
+<div class="container-fluid myproj mt-3">
+    <div class="row ">
+        <div class="col-sm-6 unprfct">
+            <h1 class="d-inline">Sentiment Analysis</h1>
+            <a (click)="back()"><img src="../../../../assets/reply-message.png" class="img-fluid d-inline float-end back-btn"></a>
+            <p class="mt-3">This is a Machine Learning Model which predicts whether a given review is positive or negative.</p>
+            <p>This model takes the text data and do ML processing and shows the result.</p>
+            <a href="http://nanuquotes.herokuapp.com/" target="_blank" class="btn btn but">View Site</a><br>
+            <button type="button" class="btn btn but" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                View Screenshots
+              </button>
+        </div>
+        <div class="col"></div>
+        <div class="col-sm-4 ani-video">
+            <!-- <img src="../../../assets/shop.gif"> -->
+            <img src="../../../../assets/ai.png" class="img-fluid">
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row mt-sm-4">
+        <div class="col-sm cards">
+            <h6>Technologies Used</h6>
+            <div class="row">
+            <div class="col">
+                <ul class="mt-3">
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>Python Flask</li>
+                    <li>Bootstrap 5</li>
+                    <li>SQL Lite</li>
+                </ul>
+            </div>
+
+        </div>
+            
+        </div>
+        <div class="col-sm cards last-card">
+            <h6>Notable Features</h6>
+            <ul class="my-3">
+                <li>Cleans the text data.</li>
+                <li>Can predict user's review, if positive or negative.</li>
+            </ul>
+        </div>
+
+        <div class="col-sm"></div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <a><img src="../../../../assets/cancel.png" data-bs-dismiss="modal" class="img-fluid d-inline float-end back-btn"></a>
+          <!-- <button class="btn-close" data-bs-dismiss="modal">
+            <img src="../../../assets/cancel.png" class="img-fluid back-btn">
+          </button> -->
+        </div>
+        <div class="modal-body">
+            <i>
+                <input checked type="radio" name="s" style="background-image: url('../../../../assets/sa1.png');" title="Home">
+                <input type="radio" name="s" style="background-image: url('../../../../assets/sa22.png');" title="Reviews">
+                <input type="radio" name="s" style="background-image: url('../../../../assets/sa3.png');" title="Quotes">
+             </i>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>

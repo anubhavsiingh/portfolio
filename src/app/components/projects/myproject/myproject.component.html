@@ -1,0 +1,97 @@
+<div class="container-fluid myproj mt-3">
+    <div class="row ">
+        <div class="col-sm-6 unprfct">
+            <h1 class="d-inline">UNPRFCT</h1>
+            <a (click)="back()"><img src="../../../../assets/reply-message.png" class="img-fluid d-inline float-end back-btn"></a>
+            <p class="mt-3">Unprfct is an online shopping portal for fashion and lifestyle products, where customer can buy products and admin can add/delete products.</p>
+            
+            <button class="btn btn but disabled">View Site</button><br>
+            <button type="button" class="btn btn but" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                View Screenshots
+              </button>
+        </div>
+        <div class="col"></div>
+        <div class="col-sm-4 ani-video">
+            <!-- <img src="../../../assets/shop.gif"> -->
+            <img src="https://c.tenor.com/bFkvAnRiQUEAAAAi/stickergiant-swipe-up.gif" class="img-fluid">
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <div class="row mt-sm-4">
+        <div class="col-sm cards">
+            <h6>Technologies Used</h6>
+            <div class="row">
+            <div class="col">
+                <ul class="mt-3">
+                    <li>Angular 8</li>
+                    <li>HTML 5</li>
+                    <li>CSS 3</li>
+                    <li>Bootstrap 5</li>
+                </ul>
+            </div>
+            <div class="col">
+                <ul class="mt-3">
+                    <li>MySQL</li>
+                    <li>SpringBoot 2.5</li>
+                    <li>JPA</li>
+                    <li>Rest API</li>
+                </ul>
+            </div>
+        </div>
+            
+        </div>
+        <div class="col-sm cards">
+            <h6>Notable Features</h6>
+            <ul class="mt-3">
+                <li>Login/Register</li>
+                <li>Can add/delete multiple products to cart.</li>
+                <li>Search a product or filter based on price,brand and color.</li>
+                <li>Can view and track orders.</li>
+            </ul>
+        </div>
+
+        <div class="col-sm cards last-card">
+          <h6>My Role</h6>
+            <ul class="mt-3">
+                <li>In this project I oversaw the entire SDLC.</li>
+            </ul>
+          <h6>Project Difficulties</h6>
+            <ul class="mt-3">
+                <li>Cart Funtionality.</li>
+                <li>Persist the cart data for a long time until the user buy it.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+
+  
+  <!-- Modal -->
+  <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <a><img src="../../../../assets/cancel.png" data-bs-dismiss="modal" class="img-fluid d-inline float-end back-btn"></a>
+          <!-- <button class="btn-close" data-bs-dismiss="modal">
+            <img src="../../../assets/cancel.png" class="img-fluid back-btn">
+          </button> -->
+        </div>
+        <div class="modal-body">
+            <i>
+                <input checked type="radio" name="s" style="background-image: url('../../../../assets/p1.png');" title="Home Page">
+                <input type="radio" name="s" style="background-image: url('../../../../assets/up1.png');" title="Shop View">
+                <input type="radio" name="s" style="background-image: url('../../../../assets/up2.png');" title="Cart">
+                <input type="radio" name="s" style="background-image: url('../../../../assets/up3.png');" title="Product Details">
+                <input type="radio" name="s" style="background-image: url('../../../../assets/p5.png');" title="Payment & Order">
+            </i>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,122 @@
+
+.mob-head{
+    display: none;
+}
+
+@media screen and (max-width: 770px) {
+    .mob-head{
+        display: flex;
+        /* position: fixed; */
+        margin-left: 5px;
+        margin-top: 12px;
+        padding-left: 0;
+        
+    }
+    p{
+        font-size: 1rem;
+          color: #ffffff; 
+          /* font-family: 'Stalemate', cursive; */
+          font-family: 'Pacifico', cursive;
+          font-weight: 300;
+          font-size: 1.2rem;
+        /* margin-top: 2px; */
+    }
+    .pic{
+        border:4px solid #212325;
+        border-radius: 50%;
+        width: 92%;
+        margin: 2px;
+    }
+
+    .grad-border{
+        width: 45px;
+        height: 45px;
+        background-image: linear-gradient(to right, rgb(82, 24, 218), rgb(233, 27, 205));
+        border-radius: 50%;
+    }
+
+    .grad-border:hover{
+       animation: circle .5s linear;
+    }
+
+    @keyframes circle {
+        0%{
+            background-image:  linear-gradient(to right, rgb(82, 24, 218), rgb(233, 27, 205)); 
+        }
+
+        35%{
+            background-image:  linear-gradient(to right, rgb(98, 24, 218), rgb(199, 27, 233)); 
+
+        }
+
+        70%{
+            background-image:  linear-gradient(to right, rgb(179, 24, 218), rgb(140, 27, 233)); 
+
+        }
+
+        100%{
+            background-image: linear-gradient(to right, rgb(233, 27, 205),rgb(82, 24, 218));
+        }
+    }
+
+    .s-icon{
+        position: fixed;
+        top:20px;
+        right: 20px;
+        width: 35px;
+        height:35px;
+    }
+
+    .s-icons{
+        position: fixed;
+        display: none;
+        top:70px;
+        right: 20px;
+        width: 35px;
+        height:135px;
+        
+        background: linear-gradient(130deg,
+              rgba(215, 177, 226, 0.726),
+              rgba(214, 214, 253, 0.781));
+  /* box-shadow: inset 2px 2px 1px rgba(251,251,254,.3)
+              inset -2px -2px 1px rgba(200, 200, 240, 0.2); */
+  border-radius: 1.5rem;
+  backdrop-filter: blur(3px);
+    }
+
+    @keyframes icon-ani {
+        0%{
+         transform: scale(0);
+        }
+
+        100%{
+            transform: scale(1.1);
+        }
+    }
+    
+    .ic{
+        display: block;
+        padding-left: 7px;
+        padding-top: 10px;
+        font-size: 1.4rem;
+    }
+
+    .cust1{
+        animation: icon-ani .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+       color: purple;
+    }
+
+    .cust2{
+        animation: icon-ani .3s .4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        color: rgb(7, 97, 7);
+        
+    }
+
+    .cust3{
+        animation: icon-ani .3s .8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        color: blue;
+    }
+
+
+
+}
